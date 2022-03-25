@@ -43,10 +43,23 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+  color: var(--Dark-Blue);
+}
+
+p {
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--Grayish-Blue);
+}
+
 body {
   font-size: 1.8rem;
   background: var(--Very-Light-Gray);
-  line-height: 1.8;
+  overflow: hidden;
 }
 
 header {
@@ -146,7 +159,7 @@ ul {
 
 /* Main  */
 
-section {
+section:not(:first-of-type) {
   margin-bottom: 5rem;
 }
 
@@ -159,7 +172,7 @@ section {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
@@ -170,6 +183,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
 }
 
 .intro-img-container img {
@@ -183,9 +197,22 @@ h1 {
 .intro-content {
   padding: 2rem;
 }
+
+/* Why section  */
+h2 {
+  font-weight: 400;
+}
+
+.why-section {
+  background: var(--Light-Grayish-Blue);
+  text-align: center;
+  padding: 7rem 2rem;
+  border: 1px solid red;
+}
+
 /* Desktop  */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
   header {
     padding-inline: 4rem;
     padding-block: 0;
@@ -223,9 +250,9 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 20rem;
     overflow: hidden;
-    padding: 15rem 0 20rem 15rem;
+    padding: 15rem 0 15rem 10rem;
     background: url(/images/bg-intro-desktop.svg) no-repeat;
     background-position: top -250px right -260%;
   }
@@ -248,6 +275,16 @@ h1 {
   }
 
   .intro-content {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  /* Why section   */
+
+  .why-section {
     text-align: left;
   }
 }
