@@ -159,10 +159,6 @@ ul {
 
 /* Main  */
 
-section:not(:first-of-type) {
-  margin-bottom: 5rem;
-}
-
 /* Intro-section  */
 .intro-section {
   display: flex;
@@ -286,5 +282,7 @@ h2 {
 
   .why-section {
     text-align: left;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
