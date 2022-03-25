@@ -53,13 +53,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 3rem;
+  padding: 3rem;
   position: relative;
   flex-wrap: nowrap;
   height: 10vh;
   z-index: 1;
   background-color: var(--Very-Light-Gray);
-  border: 1px solid red;
 }
 
 li {
@@ -79,6 +78,11 @@ nav a {
   padding: 2rem;
   position: relative;
 }
+
+/* nav a:hover {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+} */
 
 nav a::after {
   content: "";
@@ -154,8 +158,8 @@ section {
 .intro-section {
   display: flex;
   flex-direction: column;
+  padding-left: 2rem;
   gap: 3rem;
-  text-align: center;
 }
 
 h1 {
@@ -176,13 +180,6 @@ h1 {
   margin-top: -120px;
 }
 
-.intro-section .invite-btn {
-  margin-top: 3rem;
-}
-
-.intro-content {
-  padding: 2rem;
-}
 /* Desktop  */
 
 @media screen and (min-width: 1024px) {
@@ -223,11 +220,9 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 3rem;
     overflow: hidden;
-    padding: 15rem 0 20rem 15rem;
-    background: url(/images/bg-intro-desktop.svg) no-repeat;
-    background-position: top -250px right -260%;
+    border: 1px solid red;
   }
 
   .intro-content {
@@ -242,12 +237,7 @@ h1 {
   }
 
   .intro-img-container img {
-    position: absolute;
-    right: -125px;
-    top: 70px;
-  }
-
-  .intro-content {
-    text-align: left;
+    margin-left: 120px;
+    margin-top: -100px;
   }
 }
