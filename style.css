@@ -147,6 +147,7 @@ nav {
 
 .show {
   display: block;
+  overflow: hidden;
 }
 
 nav ul {
@@ -298,10 +299,10 @@ footer .logo {
 }
 
 footer a:hover {
-  fill: var(--Lime-Green);
+  color: var(--Lime-Green);
 }
 
-footer svg:hover {
+footer svg:hover path {
   fill: var(--Lime-Green);
 }
 /* Desktop  */

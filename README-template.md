@@ -64,9 +64,11 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 
+- Change color of svg icon by changing the path
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+footer svg:hover path {
+  fill: var(--Lime-Green);
 }
 ```
 
