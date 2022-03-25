@@ -45,7 +45,8 @@ button {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin-bottom: 1rem;
   color: var(--Dark-Blue);
 }
@@ -60,6 +61,7 @@ body {
   font-size: 1.8rem;
   background: var(--Very-Light-Gray);
   overflow-x: hidden;
+  text-align: center;
 }
 
 header {
@@ -215,6 +217,35 @@ h3 {
   margin-bottom: 5rem;
 }
 
+.article-section {
+  padding: 7rem 2rem;
+  border: 1px solid red;
+  display: grid;
+  gap: 3rem;
+}
+
+.article-section .card {
+  background: var(--White);
+  border-radius: 0.5rem;
+}
+
+.article-section .card-content {
+  padding-inline: 2rem;
+  background: var(--White);
+}
+
+.article-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 40%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.article-section h4 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
 /* Desktop  */
 
 @media screen and (min-width: 1300px) {
@@ -251,6 +282,10 @@ h3 {
   /* Main  */
 
   /* Intro section  */
+  h2 {
+    font-size: 3.5rem;
+  }
+
   .intro-section {
     flex-direction: row;
     align-items: center;
@@ -289,19 +324,29 @@ h3 {
 
   /* Why section   */
 
-  .why-section {
+  .why-section,
+  .article-section {
     text-align: left;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-    padding: 10rem;
+    padding: 7rem;
   }
 
   .why-section h3 {
     margin-block: 2rem;
   }
 
-  .why-heading-container {
+  .why-heading-container,
+  .article-section-heading {
     grid-area: 1 / 1 / 1 / -1;
     max-width: 45vw;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .article-section .card {
+    padding-bottom: 2rem;
   }
 }
