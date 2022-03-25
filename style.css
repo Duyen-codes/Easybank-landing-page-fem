@@ -125,6 +125,10 @@ nav a:hover::after {
   font-weight: 700;
 }
 
+.invite-btn:hover {
+  opacity: 0.7;
+}
+
 header .invite-btn {
   display: none;
 }
