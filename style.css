@@ -202,6 +202,7 @@ h2 {
 
 h3 {
   font-weight: 400;
+  margin-block: 2rem;
 }
 
 .why-section {
@@ -209,6 +210,9 @@ h3 {
   text-align: center;
   padding: 7rem 2rem;
   border: 1px solid red;
+  display: grid;
+  gap: 4rem;
+  margin-bottom: 5rem;
 }
 
 /* Desktop  */
@@ -287,7 +291,6 @@ h3 {
 
   .why-section {
     text-align: left;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     padding: 10rem;
