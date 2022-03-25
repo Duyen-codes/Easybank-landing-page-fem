@@ -73,7 +73,7 @@ header {
   flex-wrap: nowrap;
   height: 10vh;
   z-index: 1;
-  background-color: var(--Very-Light-Gray);
+  background-color: var(--White);
   position: sticky;
   top: 0;
 }
@@ -117,8 +117,8 @@ nav a:hover::after {
 }
 
 .invite-btn {
-  padding: 2rem 5rem;
-  border-radius: 4rem;
+  padding: 1.5rem 4rem;
+  border-radius: 3rem;
   background: linear-gradient(90deg, var(--Lime-Green), var(--Bright-Cyan));
   color: var(--White);
   font-size: inherit;
@@ -305,6 +305,7 @@ footer a:hover {
 footer svg:hover path {
   fill: var(--Lime-Green);
 }
+
 /* Desktop  */
 
 @media screen and (min-width: 1200px) {
