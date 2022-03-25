@@ -27,6 +27,10 @@ html {
   --White: hsl(0, 0%, 100%);
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   font-family: inherit;
@@ -42,10 +46,10 @@ button {
 body {
   font-size: 1.8rem;
   background: var(--Very-Light-Gray);
+  line-height: 1.8;
 }
 
 header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,6 +57,8 @@ header {
   position: relative;
   flex-wrap: nowrap;
   height: 10vh;
+  z-index: 1;
+  background-color: var(--Very-Light-Gray);
 }
 
 li {
@@ -105,6 +111,9 @@ nav a:hover::after {
   color: var(--White);
   font-size: inherit;
   font-weight: 700;
+}
+
+header .invite-btn {
   display: none;
 }
 
@@ -139,6 +148,38 @@ ul {
   cursor: pointer;
 }
 
+/* Main  */
+
+section {
+  margin-bottom: 5rem;
+}
+
+/* Intro-section  */
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  gap: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.intro-img-container {
+  background: url("/images/bg-intro-mobile.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-img-container img {
+  margin-top: -120px;
+}
+
 /* Desktop  */
 
 @media screen and (min-width: 1024px) {
@@ -156,7 +197,7 @@ ul {
     display: unset;
   }
 
-  .invite-btn {
+  header .invite-btn {
     display: block;
   }
 
@@ -170,5 +211,33 @@ ul {
     border-radius: unset;
     background-color: unset;
     gap: 3rem;
+  }
+
+  /* Main  */
+
+  /* Intro section  */
+  .intro-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    overflow: hidden;
+    border: 1px solid red;
+  }
+
+  .intro-content {
+    order: -1;
+  }
+
+  .intro-img-container {
+    background: url(/images/bg-intro-desktop.svg) no-repeat;
+    background-position: top -150px left 20%;
+    background-size: cover;
+    flex: 1 0 50%;
+  }
+
+  .intro-img-container img {
+    margin-left: 120px;
+    margin-top: -100px;
   }
 }
