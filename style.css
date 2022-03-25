@@ -74,6 +74,8 @@ header {
   height: 10vh;
   z-index: 1;
   background-color: var(--Very-Light-Gray);
+  position: sticky;
+  top: 0;
 }
 
 li {
