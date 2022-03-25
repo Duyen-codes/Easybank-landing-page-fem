@@ -51,6 +51,7 @@ header {
   padding: 3rem;
   position: relative;
   flex-wrap: nowrap;
+  height: 10vh;
 }
 
 li {
@@ -91,10 +92,15 @@ nav {
   width: 100%;
   left: 0;
   right: 0;
-  top: 15vh;
+  top: 10vh;
   padding-top: 2rem;
   height: 100vh;
   background: linear-gradient(hsla(233, 26%, 24%, 0.9), hsla(0, 0%, 100%, 0.8));
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }
 
 ul {
@@ -128,7 +134,7 @@ ul {
     display: block;
   }
 
-  .hamburger-icon {
+  .burger-icon {
     display: none;
   }
 
