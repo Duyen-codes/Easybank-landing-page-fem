@@ -74,7 +74,6 @@ header {
   height: 10vh;
   z-index: 1;
   background-color: var(--Very-Light-Gray);
-  border: 1px solid red;
 }
 
 li {
@@ -85,7 +84,7 @@ nav {
   background-color: lightcyan;
 }
 
-ul {
+nav ul {
   display: flex;
 }
 
@@ -144,7 +143,7 @@ nav {
   display: block;
 }
 
-ul {
+nav ul {
   border-radius: 1rem;
   padding-block: 3rem;
   background: white;
@@ -211,7 +210,6 @@ h3 {
   background: var(--Light-Grayish-Blue);
   text-align: center;
   padding: 7rem 2rem;
-  border: 1px solid red;
   display: grid;
   gap: 4rem;
   margin-bottom: 5rem;
@@ -219,7 +217,6 @@ h3 {
 
 .article-section {
   padding: 7rem 2rem;
-  border: 1px solid red;
   display: grid;
   gap: 3rem;
 }
@@ -246,9 +243,64 @@ h3 {
   font-size: 2.5rem;
 }
 
+.article-section h4:hover {
+  cursor: pointer;
+  color: var(--Lime-Green);
+}
+
+/* Footer  */
+
+footer {
+  background: var(--Dark-Blue);
+  color: var(--Very-Light-Gray);
+  padding: 5rem;
+}
+
+footer .logo {
+  filter: invert(1);
+  margin-bottom: 3rem;
+}
+
+.footer-socials {
+  margin-bottom: 3rem;
+}
+
+.footer-socials li {
+  margin: 1rem;
+}
+
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer-middle-left,
+.footer-middle-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-middle li {
+  display: block;
+}
+
+.footer-right button {
+  margin-bottom: 2rem;
+}
+
+footer a:hover {
+  fill: var(--Lime-Green);
+}
+
+footer svg:hover {
+  fill: var(--Lime-Green);
+}
 /* Desktop  */
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   header {
     padding-inline: 4rem;
     padding-block: 0;
@@ -271,7 +323,7 @@ h3 {
     display: none;
   }
 
-  ul {
+  nav ul {
     flex-direction: row;
     padding-block: 0;
     border-radius: unset;
@@ -348,5 +400,30 @@ h3 {
 
   .article-section .card {
     padding-bottom: 2rem;
+  }
+
+  /* Footer  */
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10rem;
+  }
+
+  .footer-right {
+    text-align: right;
   }
 }
