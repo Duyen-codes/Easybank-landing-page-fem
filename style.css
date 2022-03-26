@@ -140,20 +140,24 @@ header .invite-btn {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   right: 0;
   top: 10vh;
-  padding-top: 2rem;
-  height: 100vh;
   background: linear-gradient(hsla(233, 26%, 24%, 0.9), hsla(0, 0%, 100%, 0.8));
-  display: none;
+  height: 0;
+  transition: all 0.2s ease-in;
 }
 
 .open {
-  display: block;
-  overflow: hidden;
+  height: 100vh;
+  top: 10vh;
+  padding-top: 2rem;
+}
+
+.open ul {
+  opacity: 1;
 }
 
 nav ul {
@@ -165,12 +169,36 @@ nav ul {
   align-items: center;
   width: 90%;
   margin: 0 auto;
+  opacity: 0;
+  transition: all 0.3s ease-in;
 }
 
 .burger-icon {
   cursor: pointer;
 }
 
+.burger-icon > span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #2d314d;
+  transition: all 0.3s ease;
+  margin-bottom: 4px;
+  transform-origin: 0.1875rem 0.0625rem;
+}
+
+/* Style the three lines to make it an X  */
+.burger-icon.close .bar-top {
+  transform: rotate(45deg) translate(0px);
+}
+
+.burger-icon.close .bar-middle {
+  opacity: 0;
+}
+
+.burger-icon.close .bar-bottom {
+  transform: rotate(-45deg) translate(-5px);
+}
 /* Main  */
 
 /* Intro-section  */
