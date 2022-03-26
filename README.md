@@ -42,6 +42,15 @@ I have followed these steps:
 4. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
 5. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
+## Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS positioning
+- Mobile-first workflow
+- JavaScript
+
 ## Got feedback for me?
 
 I love receiving feedback! We're always looking to improve my solutions and codes. So if you have anything you'd like to mention, please email hongduyen0705[at]gmail[dot]com.
