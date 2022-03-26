@@ -396,7 +396,7 @@ footer svg:hover path {
     text-align: left;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-    padding: 7rem;
+    padding-inline: 10%;
     display: grid;
   }
 
@@ -417,7 +417,8 @@ footer svg:hover path {
   /* Footer  */
   footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-inline: 10%;
   }
 
   .footer-left {
