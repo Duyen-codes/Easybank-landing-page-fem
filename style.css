@@ -414,10 +414,6 @@ footer svg:hover path {
     font-size: 2.5rem;
   }
 
-  .article-section .card {
-    padding-bottom: 2rem;
-  }
-
   /* Footer  */
   footer {
     display: flex;
