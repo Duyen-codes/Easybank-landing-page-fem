@@ -272,22 +272,18 @@ footer {
 
 footer .logo {
   filter: invert(1);
-  margin-bottom: 3rem;
+}
+
+.footer-logo {
+  margin-bottom: 1.875rem;
 }
 
 .footer-socials {
   margin-bottom: 3rem;
 }
 
-.footer-socials li {
-  margin: 1rem;
-}
-
-.footer-middle {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 3rem;
+.footer-socials a {
+  margin-right: 1rem;
 }
 
 .footer-middle-left,
@@ -295,13 +291,6 @@ footer .logo {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-.footer-middle li {
-  display: block;
-}
-
-.footer-right button {
   margin-bottom: 2rem;
 }
 
@@ -311,6 +300,10 @@ footer a:hover {
 
 footer svg:hover path {
   fill: var(--Lime-Green);
+}
+
+.footer-cta {
+  margin-bottom: 2rem;
 }
 
 /* Desktop  */
@@ -416,48 +409,46 @@ footer svg:hover path {
 
   /* Footer  */
   footer {
-    display: flex;
-    justify-content: space-between;
     padding-inline: 10%;
+    display: grid;
+    grid-template-areas:
+      "logo col1 col2 cta"
+      "social  col1 col2 copyright";
+    justify-items: start;
+    gap: 1rem;
   }
 
-  .footer-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .footer-logo {
+    grid-area: logo;
   }
 
   .footer-socials {
-    margin-bottom: 0;
+    grid-area: social;
+    align-self: end;
   }
 
-  .footer-socials li {
-    margin-block: 0;
+  .footer-middle-left {
+    grid-area: col1;
+    align-items: flex-start;
   }
 
-  .footer-middle {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    gap: 10rem;
-    margin-bottom: 0;
-  }
-
-  .footer-middle-left,
   .footer-middle-right {
-    display: flex;
-    justify-content: space-between;
+    grid-area: col2;
+    align-items: flex-start;
   }
 
-  .footer-right {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
+  .footer-cta {
+    grid-area: cta;
+    justify-self: end;
+    margin-bottom: 0;
   }
 
-  .foote p {
-    margin-block-end: 0;
+  .footer-copyright {
+    grid-area: copyright;
+    justify-self: end;
+  }
+
+  .footer-copyright p {
+    text-align: right;
   }
 }
