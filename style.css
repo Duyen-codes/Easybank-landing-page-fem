@@ -151,7 +151,7 @@ nav {
   display: none;
 }
 
-.show {
+.open {
   display: block;
   overflow: hidden;
 }
