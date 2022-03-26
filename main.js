@@ -7,14 +7,12 @@ const navLinks = nav.querySelectorAll("ul a");
 // open mobile nav
 function openMobileNav() {
   nav.classList.add("open");
-  // burgerIcon.setAttribute("src", "./images/icon-close.svg");
   burgerIcon.classList.add("close");
 }
 
 // Close mobile nav
 function closeMobileNav() {
   nav.classList.remove("open");
-  // burgerIcon.setAttribute("src", "./images/icon-hamburger.svg");
   burgerIcon.classList.remove("close");
 }
 

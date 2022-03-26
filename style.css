@@ -215,7 +215,7 @@ h1 {
 }
 
 .intro-img-container {
-  background: url("/images/bg-intro-mobile.svg") no-repeat;
+  background: url("./images/bg-intro-mobile.svg") no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
