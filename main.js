@@ -3,6 +3,7 @@ const burgerIcon = document.querySelector(".burger-icon");
 const burgerBars = burgerIcon.querySelectorAll("span");
 const nav = document.querySelector("nav");
 const navLinks = nav.querySelectorAll("ul a");
+const toTopButton = document.querySelector(".to-top-btn");
 
 // open mobile nav
 function openMobileNav() {
@@ -39,3 +40,22 @@ window.addEventListener("resize", () => {
 });
 
 window.addEventListener("scroll", closeMobileNav);
+
+// Back to top
+toTopButton.addEventListener("click", () => {
+  console.log("clicked");
+  // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  window.scroll(0, 0);
+});
+
+// Show/ hide back to top button depending on scroll offset
+
+function scrollToTop() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    toTopButton.style.display = "block";
+  } else {
+    toTopButton.style.display = "none";
+  }
+}
+
+window.addEventListener("scroll", scrollToTop);
