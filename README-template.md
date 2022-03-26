@@ -56,9 +56,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+some of your major learnings while working through this project. Writing these out and providing code samples of areas I want to highlight is a great way to reinforce my own knowledge.
 
-To see how you can add code snippets, see below:
+- Element [ul] not allowed as child of element [ul]
 
 ```html
 <h1>Some HTML code I'm proud of</h1>

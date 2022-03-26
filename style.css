@@ -94,6 +94,12 @@ nav a {
   display: inline-block;
   padding: 2rem;
   position: relative;
+  font-family: inherit;
+  color: var(--Grayish-Blue);
+}
+
+nav a:hover {
+  color: var(--Dark-Blue);
 }
 
 nav a::after {
@@ -224,13 +230,14 @@ h3 {
 
 .article-section {
   padding: 7rem 2rem;
-  display: grid;
-  gap: 3rem;
 }
 
 .article-section .card {
   background: var(--White);
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   border-radius: 0.5rem;
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .article-section .card-content {
@@ -390,6 +397,7 @@ footer svg:hover path {
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     padding: 7rem;
+    display: grid;
   }
 
   .why-section h3 {
