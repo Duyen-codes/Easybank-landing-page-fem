@@ -190,7 +190,7 @@ nav ul {
 
 /* Style the three lines to make it an X  */
 .burger-icon.close .bar-top {
-  transform: rotate(45deg) translate(0px);
+  transform: rotate(45deg) translate(8px, -10px);
 }
 
 .burger-icon.close .bar-middle {
@@ -198,7 +198,7 @@ nav ul {
 }
 
 .burger-icon.close .bar-bottom {
-  transform: rotate(-45deg) translate(-5px);
+  transform: rotate(-45deg) translate(5px, 10px);
 }
 /* Main  */
 
