@@ -94,10 +94,6 @@ nav {
   background-color: lightcyan;
 }
 
-nav ul {
-  display: flex;
-}
-
 nav a {
   display: inline-block;
   padding: 2rem;
@@ -144,8 +140,6 @@ header .invite-btn {
   display: none;
 }
 
-
-
 .open {
   height: 100vh;
   top: 10vh;
@@ -157,6 +151,7 @@ header .invite-btn {
 }
 
 nav ul {
+  display: flex;
   border-radius: 1rem;
   padding-block: 3rem;
   background: white;
@@ -402,10 +397,6 @@ footer svg:hover path {
     background-position: top -250px right -260%;
   }
 
-  .intro-content {
-    order: -1;
-  }
-
   .intro-img-container {
     background: url(/images/bg-intro-desktop.svg) no-repeat;
     background-position: top -150px left 20%;
@@ -421,6 +412,7 @@ footer svg:hover path {
 
   .intro-content {
     text-align: left;
+    order: -1;
   }
 
   h1 {
