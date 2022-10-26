@@ -1,4 +1,6 @@
 # Frontend Mentor - Easybank landing page
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-orange.svg)](https://sonarcloud.io/summary/new_code?id=Duyen-codes_Easybank-landing-page-fem)
 - Live demo: [https://easybank-landing-page-master-duyen-codes.vercel.app/](https://easybank-landing-page-master-duyen-codes.vercel.app/)
 - ![the Easybank landing page coding challenge on Front end mentor](./design/desktop-preview.jpg)
 
