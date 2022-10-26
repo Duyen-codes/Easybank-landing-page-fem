@@ -83,6 +83,14 @@ li {
 }
 
 nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 10vh;
+  background: linear-gradient(hsla(233, 26%, 24%, 0.9), hsla(0, 0%, 100%, 0.8));
+  height: 0;
+  transition: all 0.2s ease-in;
   background-color: lightcyan;
 }
 
@@ -136,16 +144,7 @@ header .invite-btn {
   display: none;
 }
 
-nav {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 10vh;
-  background: linear-gradient(hsla(233, 26%, 24%, 0.9), hsla(0, 0%, 100%, 0.8));
-  height: 0;
-  transition: all 0.2s ease-in;
-}
+
 
 .open {
   height: 100vh;
