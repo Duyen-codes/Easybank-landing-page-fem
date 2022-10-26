@@ -70,7 +70,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-inline: 3rem;
-  position: relative;
   flex-wrap: nowrap;
   height: 10vh;
   z-index: 1;
@@ -190,7 +189,9 @@ nav ul {
 
 /* Style the three lines to make it an X  */
 .burger-icon.close .bar-top {
-  transform: rotate(45deg) translate(8px, -10px);
+  transform: rotate(45deg) translate(6px, -10px);
+  transform-origin: top left;
+
 }
 
 .burger-icon.close .bar-middle {
@@ -199,6 +200,8 @@ nav ul {
 
 .burger-icon.close .bar-bottom {
   transform: rotate(-45deg) translate(5px, 10px);
+  transform-origin: bottom left;
+
 }
 
 /* Main  */
