@@ -43,7 +43,6 @@ window.addEventListener("scroll", closeMobileNav);
 
 // Back to top
 toTopButton.addEventListener("click", () => {
-  console.log("clicked");
   // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   window.scroll(0, 0);
 });
