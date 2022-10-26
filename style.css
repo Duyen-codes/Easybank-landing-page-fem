@@ -226,7 +226,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
 }
 
 .intro-img-container img {
